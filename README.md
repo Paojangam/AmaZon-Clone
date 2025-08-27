@@ -2,6 +2,7 @@
 
 A sleek, fully functional **Amazon clone web app** built with **React** and **Firebase**.  
 Browse products, add to cart, and experience a real-time, interactive e-commerce interface — all in a responsive, modern design.
+It is a work in progress.
 
 ---
 
