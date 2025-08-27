@@ -1,0 +1,76 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* spreads content nicely */
+  background-color: #131921;
+  position: fixed; /* stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* full width */
+  z-index: 100;
+  padding: 0 20px; /* optional, keeps content from touching edges */
+  box-sizing: border-box;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0; /* removed extra margins */
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+  margin: 0 20px; /* spacing between logo and nav/options */
+}
+
+.header__searchInput {
+  height: 36px; /* adjusted for better appearance */
+  padding: 0 10px;
+  border: none;
+  width: 100%;
+  border-radius: 24px 0 0 24px;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 36px !important; /* match input height */
+  background-color: #cd9042;
+  border-radius: 0 24px 24px 0;
+  cursor: pointer;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin: 0 10px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end; /* aligned to right */
+  align-items: center;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  color: white;
+}

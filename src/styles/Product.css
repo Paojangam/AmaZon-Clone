@@ -1,0 +1,96 @@
+/* Product card container */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* info stays below image */
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px; /* card width */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Product info */
+.product__info {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.product__info p {
+  margin: 5px 0;
+  color: #111;
+  font-family: Arial, sans-serif;
+}
+
+/* Price */
+.product__price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+  margin-top: 5px;
+}
+
+.product__price small {
+  font-weight: normal;
+  margin-right: 2px;
+}
+
+/* Rating stars */
+.product__rating {
+  display: flex;
+  gap: 2px;
+  margin-top: 5px;
+}
+
+/* Product image */
+.product img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin: 10px 0 15px 0;
+}
+
+/* Add to basket button */
+.product button {
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.product button:hover {
+  background-color: #e2b33c;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .product {
+    max-width: 45%; /* two products per row */
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    max-width: 100%; /* single column for mobile */
+    padding: 10px;
+    margin: 5px 0;
+  }
+}
